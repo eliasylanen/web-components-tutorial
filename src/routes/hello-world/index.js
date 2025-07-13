@@ -30,5 +30,3 @@ export class HelloWorld extends HTMLElement {
 			<p>Hello, ${this.name}!</p>`;
 	}
 }
-
-customElements.define("hello-world", HelloWorld);

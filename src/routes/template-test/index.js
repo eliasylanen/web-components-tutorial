@@ -12,5 +12,3 @@ export class TemplateTest extends HTMLElement {
 		shadow.appendChild(template);
 	}
 }
-
-customElements.define("template-test", TemplateTest);
