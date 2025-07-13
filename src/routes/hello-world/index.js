@@ -9,7 +9,7 @@ export class HelloWorld extends HTMLElement {
 	}
 
 	attributeChangedCallback(prop, oldValue, newValue) {
-		if (oldValue !== newValue) return;
+		if (oldValue === newValue) return;
 		this[prop] = newValue;
 	}
 
