@@ -1,0 +1,90 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+	"assist": {
+		"actions": {
+			"source": { "organizeImports": "on", "useSortedAttributes": "on", "useSortedKeys": "on" }
+		},
+		"enabled": true
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"includes": [
+			"**",
+			"!**/node_modules",
+			"!**/coverage",
+			"!**/build",
+			"!**/e2e/fixtures",
+			"!**/out",
+			"!**/.next",
+			"!**/storybook-static",
+			"!**/src/types/contentful-graphql.d.ts",
+			"!**/package.json",
+			"!**/yarn.lock",
+			"!**/test-results"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 100
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"trailingCommas": "es5"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noForEach": {
+					"level": "off",
+					"options": {}
+				}
+			},
+			"correctness": {
+				"noUnknownPseudoClass": {
+					"level": "off"
+				},
+				"useExhaustiveDependencies": {
+					"level": "warn",
+					"options": {}
+				}
+			},
+			"nursery": {
+				"useUniqueElementIds": "off"
+			},
+			"performance": {
+				"noAccumulatingSpread": {
+					"level": "off"
+				}
+			},
+			"recommended": true,
+			"style": {
+				"noInferrableTypes": "error",
+				"noParameterAssign": "error",
+				"noUnusedTemplateLiteral": "error",
+				"noUselessElse": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useNumberNamespace": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": {
+					"level": "warn"
+				}
+			}
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": false,
+		"useIgnoreFile": false
+	}
+}

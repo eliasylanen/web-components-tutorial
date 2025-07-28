@@ -1,0 +1,23 @@
+<html>
+
+	<head>
+		<title>Template slots</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script defer type="module" src="/routes/index.js"></script>
+	</head>
+
+	<body>
+		<declarative-dom name="Test">
+			<template shadowrootmode="closed">
+				<slot name="msgtext" class="hw-text"></slot>
+				<slot></slot>
+			</template>
+
+			<h1 slot="msgtext">Hello Default!</h1>
+			<p>This text will become part of the component.</p>
+			<p>As will this</p>
+		</declarative-dom>
+	</body>
+
+</html>
